@@ -9,6 +9,20 @@
     <title>FLORES</title>
 </head>
 <body>
+
+    <audio id="miAudio" loop>
+        <source src="una_otra.mp3" type="audio/mp3">
+      </audio>
+      
+      <button onclick="reproducirAudio()">Reproducir Música</button>
+      
+      <script>
+        function reproducirAudio() {
+          var audio = document.getElementById("miAudio");
+          audio.play();
+        }
+      </script>
+
     <div class="greetings">
 
         <span>F</span>
